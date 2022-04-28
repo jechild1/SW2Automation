@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SW2 Automation Tests - PROJECTS" parallel="classes"
+	thread-count="1" verbose="1" group-by-instances="true">
+	<parameter name="selectedBrowser" value="chrome" />
+
+
+	<listeners>
+		<listener class-name="configuration.EnhancedHTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+
+	<test name="Project - Project - Add and Delete New Project"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.project.Project_AddAndDeleteNewProject" />
+		</classes>
+	</test>
+	
+		<test name="Project - Project - Add, Edit, and Delete New Project"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.project.Project_AddEditAndDeleteNewProject" />
+		</classes>
+	</test>
+
+
+</suite>
+

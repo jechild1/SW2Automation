@@ -1,0 +1,87 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SW2 Automation Tests - INSPECTIONS"
+	parallel="classes" thread-count="1" verbose="1"
+	group-by-instances="true">
+	<parameter name="selectedBrowser" value="chrome" />
+
+
+	<listeners>
+		<listener class-name="configuration.EnhancedHTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+
+	<test name="Project - Inspections - Assert Inspection Menus"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_AssertInspectionMenus" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Assert Inspection Card Data"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_AssertInspectionCardData" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Create Routine Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreateRoutineInspection" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Create Post Storm Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreatePostStormInspection" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Create Final Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreateFinalInspection" />
+		</classes>
+	</test>
+
+	<test
+		name="Project - Inspections - Create Routine + Post Storm Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreateRoutinePlusPostStormInspection" />
+		</classes>
+	</test>
+
+	<test
+		name="Project - Inspections - Post Storm Inspection - COLORADO"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreatePostStormInspection_COLORADO" />
+		</classes>
+	</test>
+
+	<test name="Reports - Inspection Reports" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.reports.Report_InspectionReport" />
+		</classes>
+	</test>
+
+
+
+
+
+
+</suite>
+

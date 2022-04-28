@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SW2 Automation Tests" parallel="classes"
+	thread-count="1" verbose="1" group-by-instances="true">
+	<parameter name="selectedBrowser" value="chrome" />
+
+
+	<listeners>
+		<listener class-name="configuration.EnhancedHTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+
+	<test name="Login Error Handeling" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.loginTests.Login_ErrorChecks" />
+		</classes>
+	</test>
+
+
+	<test name="Login Forgot Password" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.loginTests.Login_ForgotPassword" />
+		</classes>
+	</test>
+	
+
+	<test name="Login All Users" preserve-order="true" enabled="true"
+		group-by-instances="true">
+		<classes>
+			<class name="testCases.loginTests.Login_AllUsers" />
+		</classes>
+	</test>
+
+	<test name="Exercise Navigation Menus" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.smokeTests.ExerciseNavigationMenus" />
+		</classes>
+	</test>
+
+	<test name="Perform Division Assertion" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.DivisionAssertion" />
+		</classes>
+	</test>
+	
+
+	<test name="Perform Inspection Template Create and Tear Down"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.inspectionTemplates.InspectionTemplateQuestionsCreationDeletion" />
+		</classes>
+	</test>
+	
+		<test name="Perform Inspection Template Create Certification Inspection And Tear Down"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.inspectionTemplates.InspectionTemplateCertificationCreationDeletion" />
+		</classes>
+	</test>
+
+
+</suite>
+

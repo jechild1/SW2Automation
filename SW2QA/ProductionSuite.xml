@@ -1,0 +1,127 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SW2 Automation Tests - PRODUCTION" parallel="classes"
+	thread-count="1" verbose="1" group-by-instances="true">
+	<parameter name="selectedBrowser" value="edge" />
+	
+	
+	<listeners>
+		<listener class-name="configuration.EnhancedHTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+
+	<test name="Login Error Handeling" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.loginTests.Login_ErrorChecks" />
+		</classes>
+	</test>
+	
+
+	<test name="Login All Users" preserve-order="true" enabled="true"
+		group-by-instances="true">
+		<classes>
+			<class name="testCases.loginTests.Login_AllUsers" />
+		</classes>
+	</test>
+
+	<test name="Exercise Navigation Menus" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.smokeTests.ExerciseNavigationMenus" />
+		</classes>
+	</test>
+	
+		<test name="Inspection Findings" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.projectInspections.projectInspectionsInspectionFindings.Project_Inspection_InspectionFindings_SQA_Alpha" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	
+	
+	
+		<test name="Project - Project - Add and Delete New Project"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.project.Project_AddAndDeleteNewProject" />
+		</classes>
+	</test>
+	
+		<test name="Project - Project - Add, Edit, and Delete New Project"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.project.Project_AddEditAndDeleteNewProject" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+		<test name="Project - Inspections - Assert Inspection Menus"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_AssertInspectionMenus" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Assert Inspection Card Data"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_AssertInspectionCardData" />
+		</classes>
+	</test>
+	
+		<test name="Project - Inspections - Create Routine Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreateRoutineInspection" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Create Post Storm Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreatePostStormInspection" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Create Final Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreateFinalInspection" />
+		</classes>
+	</test>
+
+	<test name="Project - Inspections - Create Routine + Post Storm Inspection"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.projectInspections.Project_Inspection_CreateRoutinePlusPostStormInspection" />
+		</classes>
+	</test>
+	
+	
+	
+
+
+
+
+
+</suite>
+
