@@ -12,13 +12,13 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class ClientsShared extends ClientsMain {
+public abstract class SW2ClientsShared extends SW2ClientsMain {
 
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.
 	 */
-	public ClientsShared(String regexURL) {
+	public SW2ClientsShared(String regexURL) {
 		super(regexURL);
 
 	}

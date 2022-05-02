@@ -9,13 +9,13 @@ import pageFactories.MenusPageFactory;
  * @author Jesse Childress
  *
  */
-public abstract class ClientsMain extends MenusPageFactory {
+public abstract class SW2ClientsMain extends MenusPageFactory {
 
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.
 	 */
-	public ClientsMain(String regexURL) {
+	public SW2ClientsMain(String regexURL) {
 		super(regexURL);
 
 	}

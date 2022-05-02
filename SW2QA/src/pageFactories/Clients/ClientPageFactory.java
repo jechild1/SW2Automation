@@ -19,7 +19,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class ClientPageFactory extends ClientsMain {
+public class ClientPageFactory extends SW2ClientsMain {
 
 	public static String regexURL = BASE_URL + "divisions" + ".*" + "clients" + ".*";
 
