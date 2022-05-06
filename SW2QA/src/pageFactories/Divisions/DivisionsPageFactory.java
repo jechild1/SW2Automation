@@ -3,7 +3,7 @@ package pageFactories.Divisions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import pageFactories.SW2Tables;
 
 /**
@@ -14,7 +14,7 @@ import pageFactories.SW2Tables;
  * @author Jesse Childress
  *
  */
-public class DivisionsPageFactory extends MenusPageFactory{
+public class DivisionsPageFactory extends SW2MenusPageFactory{
 	
 	public static String regexURL = BASE_URL + ".*" + "divisions";
 

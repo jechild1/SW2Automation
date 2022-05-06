@@ -3,7 +3,7 @@ package pageFactories.Project;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import pageFactories.SW2Modals;
 import utilities.AutomationHelper;
 
@@ -16,7 +16,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class SW2ProjectPageFactory extends MenusPageFactory {
+public abstract class SW2ProjectPageFactory extends SW2MenusPageFactory {
 
 	/**
 	 * Constructor - passes URL information upstream

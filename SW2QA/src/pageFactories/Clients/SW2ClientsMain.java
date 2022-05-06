@@ -1,6 +1,6 @@
 package pageFactories.Clients;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 
 /**
  * This is an abstract class that will provide access to common methods for the
@@ -9,7 +9,7 @@ import pageFactories.MenusPageFactory;
  * @author Jesse Childress
  *
  */
-public abstract class SW2ClientsMain extends MenusPageFactory {
+public abstract class SW2ClientsMain extends SW2MenusPageFactory {
 
 
 	/**

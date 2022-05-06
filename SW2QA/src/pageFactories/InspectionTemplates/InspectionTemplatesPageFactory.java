@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import pageFactories.SW2Popups;
 import pageFactories.SW2Tables;
 import utilities.AutomationHelper;
@@ -17,7 +17,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class InspectionTemplatesPageFactory extends MenusPageFactory {
+public class InspectionTemplatesPageFactory extends SW2MenusPageFactory {
 
 	public static String regexURL = BASE_URL + ".*" + "inspection-templates";
 

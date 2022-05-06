@@ -13,7 +13,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class ProfilePageFactory extends MenusPageFactory {
+public class ProfilePageFactory extends SW2MenusPageFactory {
 
 	public static String pageURL = BASE_URL + "my-profile";
 

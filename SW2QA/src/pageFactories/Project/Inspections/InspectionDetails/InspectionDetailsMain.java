@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import pageFactories.SW2Popups;
 import utilities.AutomationHelper;
 
@@ -26,7 +26,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class InspectionDetailsMain extends MenusPageFactory {
+public abstract class InspectionDetailsMain extends SW2MenusPageFactory {
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.

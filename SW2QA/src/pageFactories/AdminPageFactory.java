@@ -19,7 +19,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class AdminPageFactory extends MenusPageFactory {
+public class AdminPageFactory extends SW2MenusPageFactory {
 
 	public static String regexURL = BASE_URL + ".*" + "admin";
 

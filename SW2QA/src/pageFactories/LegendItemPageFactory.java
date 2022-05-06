@@ -7,7 +7,7 @@ package pageFactories;
  * @author Jesse Childress
  *
  */
-public class LegendItemPageFactory extends MenusPageFactory{
+public class LegendItemPageFactory extends SW2MenusPageFactory{
 	
 	public static String regexURL = BASE_URL + ".*" + "map-legend";
 

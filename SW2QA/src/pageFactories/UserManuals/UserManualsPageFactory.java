@@ -1,6 +1,6 @@
 package pageFactories.UserManuals;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 
 /**
  * Page factory for the User Manuals page for SW2.<br>
@@ -10,7 +10,7 @@ import pageFactories.MenusPageFactory;
  * @author Jesse Childress
  *
  */
-public class UserManualsPageFactory extends MenusPageFactory {
+public class UserManualsPageFactory extends SW2MenusPageFactory {
 
 	public static String regexURL = BASE_URL + "user-manuals";
 

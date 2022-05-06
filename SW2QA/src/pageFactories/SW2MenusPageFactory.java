@@ -26,9 +26,9 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class MenusPageFactory extends SW2Base {
+public abstract class SW2MenusPageFactory extends SW2Base {
 
-	public MenusPageFactory(String regexURL) {
+	public SW2MenusPageFactory(String regexURL) {
 		PageFactory.initElements(driver, this);
 		new WebDriverWait(driver, Duration.ofSeconds(LONG_TIMEOUT)).until(ExpectedConditions.urlMatches(regexURL));
 		assertTrue(this.getCurrentUrl().matches(regexURL), "Validate URL changed to " + regexURL);

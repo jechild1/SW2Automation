@@ -3,7 +3,7 @@ package pageFactories.InspectionTemplates;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import utilities.AutomationHelper;
 
 /**
@@ -13,7 +13,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class SW2InspectionTemplatesMainPageFactory extends MenusPageFactory {
+public abstract class SW2InspectionTemplatesMainPageFactory extends SW2MenusPageFactory {
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.

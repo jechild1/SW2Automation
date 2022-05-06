@@ -7,7 +7,7 @@ package pageFactories;
  * @author Jesse Childress
  *
  */
-public class InspectionTemplatesPageFactory extends MenusPageFactory{
+public class InspectionTemplatesPageFactory extends SW2MenusPageFactory{
 	
 	public static String regexURL = BASE_URL + ".*" + "inspection-templates";
 

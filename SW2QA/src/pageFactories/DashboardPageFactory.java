@@ -13,7 +13,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class DashboardPageFactory extends MenusPageFactory {
+public class DashboardPageFactory extends SW2MenusPageFactory {
 
 	public static String pageURL = BASE_URL + ".*" + "dashboard";
 

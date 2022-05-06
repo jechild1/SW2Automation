@@ -3,7 +3,7 @@ package pageFactories.Regulations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import pageFactories.SW2Popups;
 import pageFactories.SW2Tables;
 import utilities.AutomationHelper;
@@ -17,7 +17,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class RegulationsDetailsPageFactory extends MenusPageFactory {
+public class RegulationsDetailsPageFactory extends SW2MenusPageFactory {
 
 	public static String regexURL = BASE_URL + ".*" + "groups" + ".*" + "regulations";
 

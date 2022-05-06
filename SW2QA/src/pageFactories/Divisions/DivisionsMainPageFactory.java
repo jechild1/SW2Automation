@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageFactories.MenusPageFactory;
+import pageFactories.SW2MenusPageFactory;
 import utilities.AutomationHelper;
 
 /**
@@ -17,7 +17,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class DivisionsMainPageFactory extends MenusPageFactory {
+public abstract class DivisionsMainPageFactory extends SW2MenusPageFactory {
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.
