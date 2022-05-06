@@ -1,6 +1,6 @@
 package pageFactories.Project.Inspections.InspectionDetails;
 
-public class InspectionMapPageFactory extends InspectionDetailsMain {
+public class InspectionMapPageFactory extends SW2InspectionDetailsMain {
 
 	public static String regexURL = BASE_URL + ".*" + "inspection" + ".*" + "map";
 

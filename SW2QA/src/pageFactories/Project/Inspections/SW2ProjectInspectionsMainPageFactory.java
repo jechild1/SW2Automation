@@ -22,12 +22,12 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class ProjectInspectionsMainPageFactory extends SW2ProjectPageFactory {
+public abstract class SW2ProjectInspectionsMainPageFactory extends SW2ProjectPageFactory {
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.
 	 */
-	public ProjectInspectionsMainPageFactory(String regexURL) {
+	public SW2ProjectInspectionsMainPageFactory(String regexURL) {
 		super(regexURL);
 	}
 

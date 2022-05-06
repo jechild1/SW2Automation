@@ -1,6 +1,6 @@
 package pageFactories.Project.ActiveSiteMap;
 
-import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
+import pageFactories.Project.Inspections.SW2ProjectInspectionsMainPageFactory;
 
 /**
  * Page factory for the Project page > Inspections > Active Site Map for
@@ -11,7 +11,7 @@ import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
  * @author Jesse Childress
  *
  */
-public class ActiveSiteMapPageFactory extends ProjectInspectionsMainPageFactory {
+public class ActiveSiteMapPageFactory extends SW2ProjectInspectionsMainPageFactory {
 
 	public static String regexURL = BASE_URL + "divisions" + ".*" + "projects" + ".*" + "active-site-map";
 

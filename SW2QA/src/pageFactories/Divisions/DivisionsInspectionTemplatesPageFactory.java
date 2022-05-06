@@ -25,7 +25,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class DivisionsInspectionTemplatesPageFactory extends DivisionsMainPageFactory {
+public class DivisionsInspectionTemplatesPageFactory extends SW2DivisionsMainPageFactory {
 
 	public static String regexURL = BASE_URL + ".*" + "divisions" + ".*" + "resources/inspection-templates";
 

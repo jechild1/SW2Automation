@@ -22,7 +22,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class ProjectInspectionsPageFactory extends ProjectInspectionsMainPageFactory {
+public class ProjectInspectionsPageFactory extends SW2ProjectInspectionsMainPageFactory {
 
 	public static String regexURL = BASE_URL + ".*" + "projects" + ".*" + "inspections";
 

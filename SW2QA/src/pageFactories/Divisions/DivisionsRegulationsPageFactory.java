@@ -15,7 +15,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class DivisionsRegulationsPageFactory extends DivisionsMainPageFactory {
+public class DivisionsRegulationsPageFactory extends SW2DivisionsMainPageFactory {
 
 	public static String regexURL = BASE_URL + ".*" + "divisions" + ".*" + "resources/regulations";
 

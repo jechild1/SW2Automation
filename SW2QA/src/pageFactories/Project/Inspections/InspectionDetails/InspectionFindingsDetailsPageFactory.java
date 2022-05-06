@@ -19,7 +19,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class InspectionFindingsDetailsPageFactory extends InspectionDetailsMain {
+public class InspectionFindingsDetailsPageFactory extends SW2InspectionDetailsMain {
 
 	public static String regexURL = BASE_URL + ".*" + "inspection" + ".*" + "findings" + ".*" + "details";
 

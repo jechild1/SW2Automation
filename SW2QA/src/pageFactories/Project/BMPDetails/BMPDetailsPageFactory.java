@@ -1,6 +1,6 @@
 package pageFactories.Project.BMPDetails;
 
-import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
+import pageFactories.Project.Inspections.SW2ProjectInspectionsMainPageFactory;
 
 /**
  * Page factory for the Project page > Inspections > BMP Details for SW2.<br>
@@ -10,7 +10,7 @@ import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
  * @author Jesse Childress
  *
  */
-public class BMPDetailsPageFactory extends ProjectInspectionsMainPageFactory{
+public class BMPDetailsPageFactory extends SW2ProjectInspectionsMainPageFactory{
 
 	public static String regexURL = BASE_URL + "divisions" + ".*" + "projects" + ".*" + "bmp-docs";
 

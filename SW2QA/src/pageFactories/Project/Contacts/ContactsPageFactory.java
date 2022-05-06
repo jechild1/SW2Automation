@@ -1,6 +1,6 @@
 package pageFactories.Project.Contacts;
 
-import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
+import pageFactories.Project.Inspections.SW2ProjectInspectionsMainPageFactory;
 
 /**
  * Page factory for the Project page > Inspections > Contacts for SW2.<br>
@@ -10,7 +10,7 @@ import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
  * @author Jesse Childress
  *
  */
-public class ContactsPageFactory extends ProjectInspectionsMainPageFactory{
+public class ContactsPageFactory extends SW2ProjectInspectionsMainPageFactory{
 
 	public static String regexURL = BASE_URL + "divisions" + ".*" + "projects" + ".*" + "contacts";
 

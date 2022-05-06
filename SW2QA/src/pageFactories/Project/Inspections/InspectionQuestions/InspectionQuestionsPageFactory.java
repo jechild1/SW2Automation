@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Reporter;
 
-import pageFactories.Project.Inspections.InspectionDetails.InspectionDetailsMain;
+import pageFactories.Project.Inspections.InspectionDetails.SW2InspectionDetailsMain;
 import utilities.AutomationHelper;
 
 /**
@@ -21,7 +21,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class InspectionQuestionsPageFactory extends InspectionDetailsMain {
+public class InspectionQuestionsPageFactory extends SW2InspectionDetailsMain {
 
 	public static String regexURL = BASE_URL + ".*" + "inspection" + ".*" + "questionnaire";
 

@@ -5,7 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
+import pageFactories.Project.Inspections.SW2ProjectInspectionsMainPageFactory;
 import utilities.AutomationHelper;
 
 /**
@@ -17,7 +17,7 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public class ProjectDocumentsPageFactory extends ProjectInspectionsMainPageFactory {
+public class ProjectDocumentsPageFactory extends SW2ProjectInspectionsMainPageFactory {
 
 	public static String regexURL = BASE_URL + "divisions" + ".*" + "projects" + ".*" + "project-docs";
 

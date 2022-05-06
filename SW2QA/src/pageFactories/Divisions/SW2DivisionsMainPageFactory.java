@@ -17,12 +17,12 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class DivisionsMainPageFactory extends SW2MenusPageFactory {
+public abstract class SW2DivisionsMainPageFactory extends SW2MenusPageFactory {
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.
 	 */
-	public DivisionsMainPageFactory(String regexURL) {
+	public SW2DivisionsMainPageFactory(String regexURL) {
 		super(regexURL);
 	}
 

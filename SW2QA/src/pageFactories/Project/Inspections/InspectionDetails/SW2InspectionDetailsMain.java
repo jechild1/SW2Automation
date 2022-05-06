@@ -26,12 +26,12 @@ import utilities.AutomationHelper;
  * @author Jesse Childress
  *
  */
-public abstract class InspectionDetailsMain extends SW2MenusPageFactory {
+public abstract class SW2InspectionDetailsMain extends SW2MenusPageFactory {
 
 	/**
 	 * Page Constructor - Calls constructor in MenusPageFactory.
 	 */
-	public InspectionDetailsMain(String regexURL) {
+	public SW2InspectionDetailsMain(String regexURL) {
 		super(regexURL);
 		waitForPageToLoad();
 	}

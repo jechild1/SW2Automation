@@ -1,6 +1,6 @@
 package pageFactories.Project.CorrectiveActions;
 
-import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
+import pageFactories.Project.Inspections.SW2ProjectInspectionsMainPageFactory;
 
 /**
  * Page factory for the Project page > Inspections > Corrective Actions
@@ -11,7 +11,7 @@ import pageFactories.Project.Inspections.ProjectInspectionsMainPageFactory;
  * @author Jesse Childress
  *
  */
-public class CorrectiveActionsPageFactory extends ProjectInspectionsMainPageFactory {
+public class CorrectiveActionsPageFactory extends SW2ProjectInspectionsMainPageFactory {
 
 	public static String regexURL = BASE_URL + "divisions" + ".*" + "projects" + ".*" + "findings";
 
