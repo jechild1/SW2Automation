@@ -2,7 +2,7 @@
 <suite name="SW2 Automation Tests - INSPECTIONS"
 	parallel="classes" thread-count="1" verbose="1"
 	group-by-instances="true">
-	<parameter name="selectedBrowser" value="chrome" />
+	<parameter name="selectedBrowser" value="edge" />
 
 
 	<listeners>

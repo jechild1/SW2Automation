@@ -76,16 +76,29 @@ public class LogoutAndLoginAsDifferentUserMod extends BaseTestScriptConfig {
 
 		// Capture the current user role.
 		captureInitialUserRole();
+//		String originalWindowHandle = driver.getWindowHandle();
 
 		// Log of out of the system
 		clickLogOut();
+		
 
 		// Once you log out, close the browser window
-		driver.close();
+		driver.close(); //Produces COnnectionFailedException in Firefox driver - Unable to establish websocket connection.
 
 		// Log in again as the passed in role (the secondary role)
 		LoginMod login = new LoginMod(secondaryRole);
 		login.login(division);
+		
+//		String newWindowHandle = driver.getWindowHandle();
+//		
+//		//Switch to old window to close
+//		driver.switchTo().window(originalWindowHandle);
+//		driver.close();
+//		
+//		//Switch back to new window
+//		driver.switchTo().window(newWindowHandle);
+//		//Close the other window.
+		
 
 		// Load the URL
 		if (loadOriginalPage) {
