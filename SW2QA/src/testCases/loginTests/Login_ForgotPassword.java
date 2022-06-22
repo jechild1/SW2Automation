@@ -24,6 +24,10 @@ import utilities.ExcelDataConfig;
  *
  */
 public class Login_ForgotPassword extends BaseTestScriptConfig {
+	
+	// Mail Trap user name / pass
+	protected static String mailTrapEmailAddress = "mmurray@sw2.net";
+	protected static String mailTrapEmailPassword = "Hw8MXPskqnKLXxU";
 
 	@Test(dataProvider = "userAccount")
 	public void resetPassword(String emailAddress, String password, String x, String y) {

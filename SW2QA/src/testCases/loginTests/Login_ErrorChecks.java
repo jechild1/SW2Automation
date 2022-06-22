@@ -10,7 +10,8 @@ import utilities.ExcelDataConfig;
 
 /**
  * This test case: Logs in as a random user and performs error checks on the
- * Login Page. It ensures that the correct errors fire.
+ * Login Page. It ensures that the correct errors fire and those errors are
+ * checked against text listed in a data sheet.
  * 
  * @author Jesse Childress
  *
@@ -36,7 +37,8 @@ public class Login_ErrorChecks extends BaseTestScriptConfig {
 		lp_factory.clickLogin();
 
 		/*
-		 * FIRST TEST: Click submit with NO data and ensure that the correct errors are returned.
+		 * FIRST TEST: Click submit with NO data and ensure that the correct errors are
+		 * returned.
 		 */
 		// This field is required
 		Assert.assertEquals(noUserName, lp_factory.readEmailError());
@@ -45,47 +47,50 @@ public class Login_ErrorChecks extends BaseTestScriptConfig {
 		// Invalid Form Data
 		Assert.assertEquals(mainError, lp_factory.readMainErrorMessageText());
 
-		
 		/*
-		 * SECOND TEST: Enter in bogus email address without password. Entering without a password
+		 * SECOND TEST: Enter in bogus email address without password. Entering without
+		 * a password
 		 */
-		
+
 		// leaves text "This field is required"
 		lp_factory.setEmail("wrongformat.com");
 		Assert.assertEquals("", lp_factory.readEmailError());
 		Assert.assertEquals(noPassword, lp_factory.readPasswordError());
-		
-		//Clear the email field
+
+		// Clear the email field
 		lp_factory.setEmail("");
-		
+
 		/*
 		 * THIRD TEST: Enter a password, but not a user name
 		 */
-			
-		//Enter in a password, but not a user name.
+
+		// Enter in a password, but not a user name.
 		lp_factory.setPassword(password);
-		
+
 		Assert.assertEquals(noUserName, lp_factory.readEmailError());
 		Assert.assertEquals("", lp_factory.readPasswordError());
-		
-		//Clear the password field.
+
+		// Clear the password field.
 		lp_factory.setPassword("");
-		
+
 		/*
 		 * FOURTH TEST: Enter a bogus user name / password combination
 		 */
 		lp_factory.setEmail("bogusEmail@test.com");
 		lp_factory.setPassword("pass_will_not_work");
 		lp_factory.clickLogin();
-		
-		
+
 		Assert.assertEquals(invalidCombination, lp_factory.readMainErrorMessageText());
 		Assert.assertEquals("", lp_factory.readEmailError());
 		Assert.assertEquals("", lp_factory.readPasswordError());
 
-		
 	}
 
+	/**
+	 * Returns a random user account from the datasheet.
+	 * 
+	 * @return String[][]
+	 */
 	@DataProvider(name = "randomUserAccount")
 	private String[][] randomUserAccount() {
 		return getRandomUserAccount();
